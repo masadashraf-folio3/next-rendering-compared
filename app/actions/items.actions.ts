@@ -10,7 +10,7 @@ export const addItemToList = async (formData: FormData) => {
     text,
     id: Number(Date.now()),
   });
-  revalidatePath("/");
+   revalidatePath("/");
   console.log(formData);
 };
 
@@ -23,6 +23,7 @@ export const getItemById = async (
 };
 
 export const getItems = async (): Promise<ListItem[]> => {
+  console.log('THIS IS SERVER FUNCTION')
   await new Promise((resolve) => {
     setTimeout(() => {
       resolve([]);

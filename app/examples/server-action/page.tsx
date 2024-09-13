@@ -24,4 +24,4 @@ const ServerActionPage = async () => {
 
 export default ServerActionPage
 
-export const dynamic = 'force-dynamic';
+// export const dynamic = 'force-dynamic';
