@@ -29,7 +29,19 @@ export const getItems = async (): Promise<ListItem[]> => {
       resolve([]);
     }, 1500);
   });
-  const resp = await fetch("http://localhost:3000/items.json");
-  const items = (await resp.json()) as ListItem[];
+  // get domain of deployed server
+  const resp = [
+    { "id": 1, "text": "Item 1" },
+    { "id": 2, "text": "Item 2" },
+    { "id": 3, "text": "Item 3" },
+    { "id": 4, "text": "Item 4" },
+    { "id": 5, "text": "Item 5" },
+    { "id": 8, "text": "Item 8" },
+    { "id": 6, "text": "Item 6" }
+  ]
+
+
+//  await fetch("http://localhost:3000/items.json");
+  const items = resp as ListItem[];
   return [...items, ...addedItems];
 };
