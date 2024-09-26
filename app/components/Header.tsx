@@ -71,14 +71,16 @@ const Header = () => {
         >
           Ecom
         </Link>
+
         |
+
         <Link
             className={`hover:text-blue-300 ${
                 pathname === "/about" ? "text-blue-300" : ""
             } `}
-            href={"/dashboard"}
+            href={"/login"}
         >
-          Dashboard
+          login
         </Link>
       </nav>
     </header>
