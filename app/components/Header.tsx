@@ -53,6 +53,33 @@ const Header = () => {
         >
           About
         </Link>
+        |
+        <Link
+            className={`hover:text-blue-300 ${
+                pathname === "/about" ? "text-blue-300" : ""
+            } `}
+            href={"/blogs"}
+        >
+          Blog (Segment Example)
+        </Link>
+        |
+        <Link
+            className={`hover:text-blue-300 ${
+                pathname === "/about" ? "text-blue-300" : ""
+            } `}
+            href={"/ecom"}
+        >
+          Ecom
+        </Link>
+        |
+        <Link
+            className={`hover:text-blue-300 ${
+                pathname === "/about" ? "text-blue-300" : ""
+            } `}
+            href={"/dashboard"}
+        >
+          Dashboard
+        </Link>
       </nav>
     </header>
   );
